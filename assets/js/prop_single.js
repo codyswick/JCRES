@@ -2,7 +2,7 @@ import {propertiesGrid} from './prop_main.js';
 
 
 let id = document.location.search.replace(/[\W_]/g,'')
-let y = lastIndex(id);
+let y = lastIndexOf(id);
 console.log(y)
 
 
