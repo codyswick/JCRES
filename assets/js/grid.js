@@ -22,7 +22,7 @@ propertiesGrid.forEach((property, index) => {
             <div class="price-box d-flex">
               <span class="price-a">${propertiesGrid[index].mix} | $ ${propertiesGrid[index].price}</span>
             </div>
-            <a href="property_view.html?= ${propertiesGrid[index].id}"  class="link-a">Click here to view
+            <a href="property_view.html?id=${propertiesGrid[index].id}"  class="link-a">Click here to view
               <span class="bi bi-chevron-right"></span>
             </a>
           </div>
