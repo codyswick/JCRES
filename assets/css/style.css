@@ -2247,3 +2247,14 @@ select {
 .hidden {
   display: none;
 }
+
+#image-in-1, #image-in-2, #image-in-3{
+height: 70vh;
+width: 100%;
+background: no-repeat center center fixed;
+background-size:contain;
+margin: 0;
+
+
+
+}
