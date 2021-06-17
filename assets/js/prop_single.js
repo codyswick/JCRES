@@ -4,28 +4,9 @@ import {propertiesGrid} from './prop_main.js'
 let id = document.location.search.replace(/[\W_]/g,'')
 let y = id - 200;
 console.log(y)
-localStorage.clear();
-
-
-// const address = propertiesGrid[y].address.line1
-// const addressTwo = propertiesGrid[y].address.line2
-// const imgOne = propertiesGrid[y].image
-// const imgTwo = propertiesGrid[y].image2
-// const imgThree= propertiesGrid[y].image3
-// const city = propertiesGrid[y].address.city
-// const state = propertiesGrid[y].address.state
-// const price = propertiesGrid[y].price
 
 
 function test(){
-  // const address = propertiesGrid[y].address.line1
-  // const addressTwo = propertiesGrid[y].address.line2
-  // const imgOne = propertiesGrid[y].image
-  // const imgTwo = propertiesGrid[y].image2
-  // const imgThree= propertiesGrid[y].image3
-  // const city = propertiesGrid[y].address.city
-  // const state = propertiesGrid[y].address.state
-  // const price = propertiesGrid[y].price
 
 
   const address = document.getElementById("address_single")
