@@ -1,102 +1,5 @@
-export const propertiesGrid = [
-  {
-    image: "assets/img/slide-3.jpg",
-    price: "1.4M",
-    beds: 4,
-    baths: 3,
-    size: "2300sqft",
-    garage: 3,
-    mix: "new",
-    address: {
-      line1: "1643",
-      line2: "Olive Road",
-      city: "Black Forrest",
-      state: "Colorado",
-      zipCode: "87745"
-    }
+import {propertiesGrid} from './prop_main.js'
 
-  }, {
-    image: "assets/img/slide-4.jpg",
-    price: "350,000.00",
-    beds: 3,
-    baths: 2,
-    size: "1800sqft",
-    garage: 1,
-    mix: "new",
-    address: {
-      line1: "1588",
-      line2: "Loan Star Road",
-      city: "Black Forrest",
-      state: "Colorado",
-      zipCode: "87745"
-    }
-
-  }, {
-    image: "assets/img/slide-2.jpg",
-    price: "1.2M",
-    beds: 3,
-    baths: 2,
-    size: "1600sqft",
-    garage: 1,
-    mix: "new",
-    address: {
-      line1: "1888",
-      line2: "Bright Star Road",
-      city: "Black Forrest",
-      state: "Colorado",
-      zipCode: "87745"
-    }
-
-  }, {
-    image: "assets/img/property-10.jpg",
-    price: "360,000",
-    beds: 3,
-    baths: 2,
-    size: "1900sqft",
-    garage: 1,
-    mix: "old",
-    address: {
-      line1: "1892",
-      line2: "Old Fort Lane",
-      city: "Colorado Springs",
-      state: "Colorado",
-      zipCode: "87745"
-    }
-
-  }, {
-    image: "assets/img/property-4.jpg",
-    price: "1,650",
-    beds: 3,
-    baths: 2,
-    size: "1600sqft",
-    garage: 1,
-    mix: "rent",
-    address: {
-      line1: "1234",
-      line2: "Vista La Renovated",
-      city: "Black Forrest",
-      state: "Colorado",
-      zipCode: "87745"
-    }
-
-  }, {
-    image: "assets/img/property-9.jpg",
-    price: "260,000",
-    beds: 3,
-    baths: 2,
-    size: "1600sqft",
-    garage: 1,
-    mix: "buy",
-    address: {
-      line1: "8679",
-      line2: "Buy Me RD.",
-      city: "Black Forrest",
-      state: "Colorado",
-      zipCode: "87745"
-    }
-
-  }
-]
 
 /* loop through and create the hero details for the featured property */
 propertiesGrid.forEach((property, index) => {
@@ -119,7 +22,7 @@ propertiesGrid.forEach((property, index) => {
             <div class="price-box d-flex">
               <span class="price-a">${propertiesGrid[index].mix} | $ ${propertiesGrid[index].price}</span>
             </div>
-            <a href="property-single.html" class="link-a">Click here to view
+            <a href="property_view.html?= ${propertiesGrid[index].id}"  class="link-a">Click here to view
               <span class="bi bi-chevron-right"></span>
             </a>
           </div>
@@ -151,7 +54,7 @@ propertiesGrid.forEach((property, index) => {
   </div>`
 });
 
-
+// filter by value
 const rating = document.getElementById("rating");
 const elements = document.querySelectorAll(".mix");
 
@@ -170,30 +73,3 @@ rating.addEventListener("change", function () {
     }
   });
 });
-
-
-
-// var active = document.getElementsByClassName("carousel-item");
-// active[0].classList.toggle("active");
-//
-// function getRecentProp() {
-//   let propOne = document.getElementById("prop1address")
-//   let propTwo = document.getElementById("prop2address")
-//   let propThree = document.getElementById("prop3address")
-//   propOne.innerHTML = (` ${propertiesFront[0].address.line1} <br> ${propertiesFront[0].address.line2}`)
-//   propTwo.innerHTML = (` ${propertiesFront[1].address.line1} <br> ${propertiesFront[1].address.line2}`)
-//   propThree.innerHTML = (` ${propertiesFront[2].address.line1} <br> ${propertiesFront[2].address.line2}`)
-// }
-//
-// function getRecentPrice() {
-//   let priceOne = document.getElementById("priceOne")
-//   let priceTwo = document.getElementById("priceTwo")
-//   let priceThree = document.getElementById("priceThree")
-//   priceOne.innerHTML = (`List Price | $ ${propertiesFront[0].price}`)
-//   priceTwo.innerHTML = (`List Price | $ ${propertiesFront[1].price}`)
-//   priceThree.innerHTML = (`List Price | $ ${propertiesFront[2].price}`)
-//
-// }
-//
-// getRecentProp();
-// getRecentPrice();
