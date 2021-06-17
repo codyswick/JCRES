@@ -16,6 +16,7 @@
   <!-- ======= Vendor CSS Files ======= -->
   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
 
+
   <!-- ======= Bootstrap CSS ======= -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -27,11 +28,10 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
 
   <!-- ======= Main Styles-->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="/assets/css/style.css" rel="stylesheet">
 
 
 </head>
-
 <body>
 
   <!-- ======= Header/Navbar ======= -->
@@ -42,13 +42,13 @@
         <span></span>
         <span></span>
       </button>
-      <a class="navbar-brand text-brand" href="index.html"><span class="color-b">JC</span>RES</a>
+      <a class="navbar-brand text-brand" href="about.html"><span class="color-b">JC</span>RES</a>
 
       <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
         <ul class="navbar-nav">
 
           <li class="nav-item">
-            <a class="nav-link " href="index.html">Home</a>
+            <a class="nav-link active" href="index.html">Home</a>
           </li>
 
           <li class="nav-item">
@@ -62,9 +62,9 @@
 
 
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
             <div class="dropdown-menu">
-              <a class="dropdown-item active" href="team.html">Our Team</a>
+              <a class="dropdown-item " href="team.html">Our Team</a>
               <a class="dropdown-item " href="va.html">VA Benifits</a>
               <a class="dropdown-item " href="va.html">Loan Information</a>
             </div>
@@ -79,32 +79,94 @@
 
     </div>
   </nav><!-- End Header/Navbar -->
-  <!-- ======= End Header/Navbar ======= -->
 
 
-  <!-- ======= Agents Section ======= -->
-  <section class="section-agents section-t8 section3">
+  <!-- ======= Intro Single ======= -->
+  <section class="intro-single section3">
     <div class="container">
       <div class="row">
-        <div class="col-md-12">
-          <div class="title-wrap d-flex justify-content-between">
-            <div class="title-box">
-              <h2 class="title-a tile slide-left">Our Team</h2>
-              <p class="tile slide-right">Our team is comprised of two hard working verterans devoted to getting you in your new home</p>
-            </div>
-            <div class="title-link">
-
-
-            </div>
+        <div class="col-md-12 col-lg-8">
+          <div class="title-single-box">
+            <h1 class="title-single">Our Amazing Properties</h1>
+            <span class="color-text-a">All Properties</span>
           </div>
         </div>
-      </div>
-      <div class="row" id="agent-list">
-
+        <div class="col-md-12 col-lg-4">
+          <nav aria-label="breadcrumb" class="breadcrumb-box d-flex justify-content-lg-end">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="index.html">Home</a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                All Properties
+              </li>
+            </ol>
+          </nav>
+        </div>
       </div>
     </div>
-  </section><!-- End Agents Section -->
-  <!-- ======= End Agents Section ======= -->
+  </section><!-- End Intro Single-->
+
+  <!-- ======= Property Grid ======= -->
+  <section class="property-grid grid">
+    <div class="container">
+
+
+
+
+      <div class="row"id="prop-grid">
+
+        <div class="col-sm-12">
+          <div class="grid-option">
+            <select id="rating">
+              <option value="">All</option>
+              <option value="new">New Listings</option>
+              <option value="old">Older listings</option>
+              <option value="buy">For Sale</option>
+              <option value="rent">For Rent</option>
+
+            </select>
+          </div>
+        </div>
+        <hr>
+        <hr>
+
+
+      </div>
+      <!-- <div class="row">
+        <div class="col-sm-12">
+          <nav class="pagination-a">
+            <ul class="pagination justify-content-end">
+              <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1">
+                  <span class="bi bi-chevron-left"></span>
+                </a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">1</a>
+              </li>
+              <li class="page-item active">
+                <a class="page-link" href="#">2</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">3</a>
+              </li>
+              <li class="page-item next">
+                <a class="page-link" href="#">
+                  <span class="bi bi-chevron-right"></span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div> -->
+      </div>
+    </div>
+  </section><!-- End Property Grid Single-->
+
+</main><!-- End #main -->
+
+
+
 
   <!-- ======= Footer ======= -->
   <footer>
@@ -183,7 +245,6 @@
 
 
 
-
   <!-- ======= Vendor JS ======= -->
 
   <script src="assets/vendor/php-email-form/validate.js"></script>
@@ -194,9 +255,11 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
 
 
+
   <!-- ======= Main JS ======= -->
-  <script type="module" src="assets/js/agents.js"></script>
-  <script type="module" src="assets/js/animations.js"></script>
+  <script type="module" src="/assets/js/animations.js"></script>
+  <script type="module" src="/assets/js/grid.js"></script>
+
 </body>
 
 </html>
