@@ -5,7 +5,7 @@ import {propertiesGrid} from './prop_main.js'
 /* loop through and create the hero details for the featured property */
 propertiesGrid.forEach((property, index) => {
   if(property.id <= 2){
-    
+
     var prop = document.querySelector("#prop-head");
     prop.innerHTML = prop.innerHTML + `
     <div class="carousel-item " >
@@ -17,7 +17,7 @@ propertiesGrid.forEach((property, index) => {
               <span class="color-b">${property.address.line1}</span>
               <br> ${property.address.line2}</h1>
               <p class="intro-subtitle intro-price">
-                <a href="property_view.html"><span class="price-a">List Price | $ ${property.price}</span></a>
+                <a href="property_view.html?= ${propertiesGrid[index].id}"><span class="price-a">List Price | $ ${property.price}</span></a>
               </p>
             </div>
           </div>

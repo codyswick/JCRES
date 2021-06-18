@@ -2,7 +2,7 @@ import {propertiesGrid} from './prop_main.js';
 
 
 let id = document.location.search.replace(/[\W_]/g,'')
-let y = parseInt(id,10);
+let y = parseFloat(id) - 200;
 console.log(id)
 
 
